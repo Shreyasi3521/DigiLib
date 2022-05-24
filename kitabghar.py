@@ -760,7 +760,9 @@ def member_menu(member):
         else:
             print("Please choose an option in the menu.")
             
-db = mysql.connect(host = "localhost", user = "root", passwd = "Shreya35", database = "KitabGhar")
+usrnm = "user"
+pwd = "1234abcd"
+db = mysql.connect(host = "localhost", user = usrnm, passwd = pwd, database = "KitabGhar")
 cur = db.cursor()
 print("WELCOME TO KITABGHAR")
 print("PLEASE LOGIN")
